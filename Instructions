@@ -30,7 +30,9 @@ cat /var/lib/jenkins/secrets/initialAdminPassword # For getting secret password
 #Install Docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
+#Allow ubuntu user to execute docker command privileges
 sudo usermod -aG docker ${USER}
+#Allow jenkins user to user docker
 sudo usermod -aG docker jenkins
 
 #######----------------############
