@@ -22,6 +22,7 @@ mvn -version
 #######----------------############
 # Setup Jenkins
 #### Follow instruction form URL https://pkg.jenkins.io/debian-stable/
+cat /var/lib/jenkins/secrets/initialAdminPassword # For getting secret password
 #### Open Jenkins URL and Install Suggested Plugin
 #### Create a user
 
